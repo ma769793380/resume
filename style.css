@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+h1,h2,h3,h4,h5 {
+    font-weight: normal;
+}
+/*系统配置结束*/
+
+/*导航栏开始*/
+body {
+    background-color: #efefef;
+}
+.navBar-logo {
+    float: left;
+    font-weight: bold;
+    margin: 24px 0 0 15px;
+    font-family: Arial Black;
+    font-size: 24px;
+}
+.navBar-logo .logo-1 {
+    color: #e8676b;
+}
+.navBar-logo .logo-2 {
+    margin-left: 5px;
+    color: #9a9da2
+}
+.navBar-inner {
+    float: right;
+    margin-right: 155px;
+    margin-top: 20px;
+}
+.navBar-inner ul li {
+    float: left;
+    margin-left: 30px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.navBar-inner ul li a {
+    color: #cbc9cb;
+    display: inline-block;
+    padding: 12px 0;
+    border-bottom: 3px solid transparent;
+    transition: box-shadow 1s;
+}
+.navBar-inner ul li a:hover {
+    border-bottom: 3px solid #e8676b;
+
+}
+.navBarZ {
+    position: fixed;
+    width: 100%;
+}
+/*导航栏结束*/
+
+/*背景图开始*/
+.bg-picture .bg-picture-a {
+    height: 515px;
+    background-image: url("./images/rs-cover-2-2-1-1.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+.bg-picture-false {
+    height: 515px;
+    background: rgba(0,0,0,0.8);
+}
+/*背景图结束*/
+/*信息表开始*/
+.user-card {
+    max-width: 930px;
+    background-color: #fff;
+    margin: -375px auto 0;
+    box-shadow: 0px 2px 7px 1px rgba(0,0,0,0.75);
+}
+.user-card-a {
+    margin:0 50px;
+    padding-top: 58px;
+}
+.user-picture {
+    float: left;
+}
+.user-message {
+    float: left;
+    margin-left: 64px;
+    width: 467px;
+}
+.user-message .hello {
+    font-weight: bold;
+    font-size: 12px;
+    padding: 6px 13px;
+    background-color: #e8676b;
+    color: #fff;
+    position: relative;
+}
+.hello-triangle {
+    width: 0;
+    height: 0;
+    border-top: 12px solid #e8676b;
+    border-right: 12px solid transparent;
+    position: absolute;
+    top:100%;
+    left: 4px;
+}
+.user-name {
+    margin: 34px 0 10px 0;
+    font-size: 28px;
+}
+.user-line {
+    border: 1px solid #dedede;
+    width: 100%;
+    margin: 24px 0 30px 0;
+}
+.user-message dl dt,.user-message dl dd {
+    float: left;
+    padding-bottom: 16px;
+    font-size: 14px;
+}
+.user-message dl dt{
+    width: 30%;
+    font-weight: bold;
+}
+.user-message dl dd{
+    width: 70%;
+    color: #aaadb3;
+}
+.user-message .birthday {
+    color: #fff;
+    background-color: #e8676b;
+    padding: 3px 10px;
+}
+.uesr-shortcut {
+    background-color: #e8676b;
+    text-align: center;
+}
+.uesr-shortcut ul {
+    display: inline-block;
+    vertical-align: top;
+}
+.uesr-shortcut ul li {
+    float: left;
+}
+.uesr-shortcut ul li a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #e8676b;
+    border-radius: 50%;
+    line-height: 40px;
+    margin: 18px;
+}
+.uesr-shortcut ul a i {
+    color: #fff;
+    font-size: 25px;
+}
+.uesr-shortcut ul a:hover{
+    background-color: #d05c60;
+}
+/*信息表结束*/
+/*简历pdf下载按钮开始*/
+.download-resume {
+    margin: 37px auto 40px;
+    text-align: center;
+}
+.download-resume-a {
+    display: inline-block;
+    border: 1px solid #cdcfd1;
+    margin: 0 auto;
+    padding: 20px 56px;
+    border-radius: 3px;
+
+}
+.download-resume-a:hover {
+    box-shadow: 0px 2px 7px 1px rgba(0,0,0,0.75);
+    transition: box-shadow 0.3s;
+}
+.download-resume p {
+    color: #535964;
+}
+/*简历pdf下载按钮结束*/
+/*个人简介开始*/
+.individual-resume {
+    max-width: 930px;
+    margin: 0 auto 90px;
+}
+.individual-resume p {
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    color: #000;
+}
+/*个人简介结束*/
+/*个人技能条开始*/
+.skill-line-box {
+    max-width: 930px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.skill-line-box h2{
+    font-size: 30px;
+    color: #3d4451;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 23px;
+}
+.skill-line-box ul {
+    background-color: #fff;
+    padding:0 60px 50px;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+}
+.skill-line-box ul li {
+    float: left;
+    width: 48%;
+    padding-top: 40px;
+}
+.skill-line-box ul li:nth-child(even) {
+    margin-left: 4%;
+}
+.skill-line-box p {
+    font-size: 12px;
+    color: #787d86;
+    margin-bottom: 4px;
+
+}
+.skill-line-a {
+    height: 5px;
+    background-color: #fbe0e1;
+    border-radius: 3px;
+}
+.skill-line-WordPress {
+    height: 100%;
+    background-color: #e8676b;
+    width: 80%;
+    border-radius: 3px;
+}
+.skill-line-HTMLCSS {
+    height: 100%;
+    background-color: #e8676b;
+    width: 90%;
+    border-radius: 3px;
+}
+.skill-line-JavaScript {
+    height: 100%;
+    background-color: #e8676b;
+    width: 80%;
+    border-radius: 3px;
+}
+.skill-line-PHPMySQL {
+       height: 100%;
+    background-color: #e8676b;
+    width: 50%;
+    border-radius: 3px;
+}
+.skill-line-Drupal {
+    height: 100%;
+    background-color: #e8676b;
+    width: 70%;
+    border-radius: 3px;
+}
+.skill-line-Photoshop {
+    height: 100%;
+    background-color: #e8676b;
+    width: 60%;
+    border-radius: 3px;
+}
+/*个人技能条结束*/
+/*作品开始*/
+.portfolio {
+    max-width: 930px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.portfolio h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #3d4451;
+    margin: 40px 0;
+}
+.portfolio nav {
+    text-align: center;
+    display: inline-block;
+}
+.portfolio ul {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+.portfolio ul li {
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #3d4451;
+}
+.portfolio ul li:nth-child(1) {
+    margin-left: 0;
+}
+.portfolioBar {
+    height: 5px;
+    background-color: #fff;
+    margin-top: 18px;
+    border-radius: 3px;
+}
+.portfolioBar-a {
+    height: 100%;
+    background-color: #e8676b;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+.portfolioBar.state-1 .portfolioBar-a {
+    margin-left: 0;
+    width: 15%;
+}
+.portfolioBar.state-2 .portfolioBar-a {
+    margin-left: 70px;
+    width: 15%;
+}
+.portfolioBar.state-3 .portfolioBar-a {
+    margin-left: 143px;
+    width: 40%;
+}
+.works {
+    position: relative;
+    margin-top: 28px;
+}
+.protfolioImg1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.protfolioImg2 {
+    position: absolute;
+    top: 0;
+    left: 645px;
+}
+.protfolioImg3 {
+    position: absolute;
+    left: 645px;
+    top: 312px;
+}
+/*作品结束*/
